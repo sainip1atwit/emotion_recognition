@@ -3,7 +3,6 @@ import mediapipe as mp
 
 def get_face_landmarks(image, draw=False, static_image_mode=True):
 
-    # Read image input
     image_input_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
     face_mesh = mp.solutions.face_mesh.FaceMesh(static_image_mode=static_image_mode,
