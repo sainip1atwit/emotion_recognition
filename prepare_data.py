@@ -8,7 +8,7 @@ data_dir = './data'
 
 output = []
 
-for emotion_indx, emotion in enumerate(os.listdir(data_dir)):
+for emotion_indx, emotion in enumerate(sorted(os.listdir(data_dir))):
 
     for image_path_ in os.listdir(os.path.join(data_dir, emotion)):
 
